@@ -1,5 +1,6 @@
-export  function Button(props) {
+export  function Button({title, onClickLogin}) {
+
   return (
-    <button className="btn">{props.title}</button>
+    <button className="btn" onClick={onClickLogin}>{title}</button>
   )
 }

@@ -1,3 +1,8 @@
-export  function Input(props) {
-  return <input type="text" placeholder={props.title} className="input"/>
+export  function Input({title, value, onChange}) {
+  return <input 
+            type="text" 
+            placeholder={title} 
+            value={value} 
+            onChange={onChange} 
+            className="input"/>
 }
